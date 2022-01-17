@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Exp2_Q1 is
-    Port ( A : in STD_LOGIC;
+    Port ( 
+           A : in STD_LOGIC;
            B : in STD_LOGIC;
            Cin : in STD_LOGIC;
            S : OUT STD_LOGIC;
@@ -48,7 +49,7 @@ begin
 S <= A xor B xor Cin;
 
 Cout<=(A AND B) OR (A AND CIN) OR (B AND CIN);
-
+-- este comentario ´so um teste
 
 
 end Behavioral;
